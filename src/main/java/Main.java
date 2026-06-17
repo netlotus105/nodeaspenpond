@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Main {
-    private static final String APP_NAME = "CacheManager_e7578a";
+    private static final String APP_NAME = "CacheManager_1452d3";
     private static final String VERSION = "1.8.0";
 
     private String name;

